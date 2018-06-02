@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ChatModule } from './features/chat/chat.module';
-import { SharedModule } from './shared/shared.module';
+import { ChatModule } from '@chat/chat.module';
+import { SharedModule } from '@shared/shared.module';
+import { AppRoutingModule } from 'app/app-routing.module';
+import { AppComponent } from 'app/app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, SharedModule, AppRoutingModule, BrowserAnimationsModule, ChatModule],
+  imports: [BrowserModule, BrowserAnimationsModule, SharedModule, AppRoutingModule, ChatModule],
   providers: [],
   bootstrap: [AppComponent]
 })

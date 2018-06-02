@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Event } from '@chat/chat/shared/model/event';
-import { Message } from '@chat/chat/shared/model/message';
+import { Event } from '@chat/shared/model/event';
+import { Message } from '@chat/shared/model/message';
 import { Observable } from 'rxjs';
 import * as socketIo from 'socket.io-client';
 
